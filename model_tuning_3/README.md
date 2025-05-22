@@ -45,6 +45,6 @@ report_to="none",
 
 ## PLAN
 
-1. dataset 8000개 -> 16000개
+1. dataset 8000개 -> 30000개
 2. epochs 20 -> 30~40
 3. learning_rate 1e-4 -> 3e-4
