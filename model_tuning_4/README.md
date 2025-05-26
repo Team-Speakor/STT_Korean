@@ -8,8 +8,8 @@ dataset : 30000개 ( 24000/ 3000/ 3000)
 | `learning_rate`         | `1e-4`       | **`2e-4`**    | 학습 수렴 속도 향상 목적 (cosine scheduler 포함)     |
 | `num_train_epochs`      | 20           | 20            | 충분한 epoch 유지로 과소 학습 방지                   |
 | `eval_strategy`         | `"no"`       | **`"steps"`** | 정기적 성능 모니터링 가능 (OOM은 배치 사이즈로 제어) |
-| `gradient_accumulation` | 8            | 8             | 실효 batch size 유지 (4×8=32)                        |
-| `batch_size` (GPU당)    | 4            | 4             | 메모리 안전하게 유지                                 |
+| `gradient_accumulation` | 8            | 16            | 실효 batch size 유지 (2×16=32)                       |
+| `batch_size` (GPU당)    | 4            | 2             | 메모리 안전하게 유지                                 |
 
 ### code
 
@@ -22,9 +22,9 @@ training_args = TrainingArguments(
     eval_strategy="steps",
     save_total_limit=3,
     num_train_epochs=20,
-    per_device_train_batch_size=4,
-    per_device_eval_batch_size=4,
-    gradient_accumulation_steps=8,
+    per_device_train_batch_size=2,
+    per_device_eval_batch_size=2,
+    gradient_accumulation_steps=16,
     fp16=True,                             # AMP 사용
     group_by_length=True,                  # 오디오 길이 기반 동적 배치 구성
     weight_decay=0.005,
