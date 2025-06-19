@@ -55,7 +55,15 @@ model_tuning_5/
 v7_performance.txt : WER and CER results using validation data
 
 
-{{{{{여기에 형이 하셨던 실험 작성해주시면 됩니다!! 위에 있는거 복붙 해서 수정하시면 될 것 같아요}}}}}
+model_tuning_6/
+  ├─ 1. README.md : Hyperparameter description and experiment plan
+  ├─ 2. result.txt : Sample outputs (case 1, 2)
+  └─ 3. v8.py : Fine-tuning code, result = v8
+
+model_tuning_7/
+  ├─ 1. README.md : Hyperparameter description and experiment plan
+  ├─ 2. result.txt : Sample outputs (case 1, 2)
+  └─ 3. v10.py : Fine-tuning code, result = v10
 
 ```
 
