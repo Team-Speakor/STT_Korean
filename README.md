@@ -16,16 +16,16 @@ While testing the results, we adjusted the dataset size, learning rate, and batc
 
 ### Model fine-tunning process
 
-| Experiment     | Contributor                | Model             | Key Contribution                  | Result                                                   |
-| -------------- | -------------------------- | ----------------- | --------------------------------- | -------------------------------------------------------- |
-| model_selec    | Wooeum-jeongwoo, Lee-Yujun | Whisper, Wav2vec2 | model performance compare         | Model Selection: Wav2Vec2                                |
-| model_tuning   | Lee Yujun                  | Wav2vec2          | Initial fine-tuning               | Set direction for dataset size and hyperparameter tuning |
-| model_tuning_2 | Lee Yujun                  | Wav2vec2          | Dataset and hyperparameter tuning | Set direction for dataset size and hyperparameter tuning |
-| model_tuning_3 | Lee Yujun                  | Wav2vec2          | Dataset and hyperparameter tuning | Set direction for dataset size and hyperparameter tuning |
-| model_tuning_4 | Lee Yujun                  | Wav2vec2          | Dataset and hyperparameter tuning | Set direction for dataset size and hyperparameter tuning |
-| model_tuning_5 | Lee Yujun                  | Wav2vec2          | Dataset tuning                    | Final model(v7) : WER=0.20, CER=0.07                     |
-| model_tuning_6 | Wooeum-jeongwoo            | Wav2vec2          | hyperparameter tuning             | Performance improvement experiments                      |
-| model_tuning_7 | Wooeum-jeongwoo            | Wav2vec2          | hyperparameter tuning             | Performance improvement experiments                      |
+| Experiment        | Contributor                | Model             | Key Contribution                  | Result                                                   |
+| ----------------- | -------------------------- | ----------------- | --------------------------------- | -------------------------------------------------------- |
+| model_selec       | Wooeum-jeongwoo, Lee-Yujun | Whisper, Wav2vec2 | model performance compare         | Model Selection: Wav2Vec2                                |
+| model_tuning      | Lee Yujun                  | Wav2vec2          | Initial fine-tuning               | Set direction for dataset size and hyperparameter tuning |
+| model_tuning_2    | Lee Yujun                  | Wav2vec2          | Dataset and hyperparameter tuning | Set direction for dataset size and hyperparameter tuning |
+| model_tuning_3    | Lee Yujun                  | Wav2vec2          | Dataset and hyperparameter tuning | Set direction for dataset size and hyperparameter tuning |
+| model_tuning_4    | Lee Yujun                  | Wav2vec2          | Dataset and hyperparameter tuning | Set direction for dataset size and hyperparameter tuning |
+| ✅ model_tuning_5 | Lee Yujun                  | Wav2vec2          | Dataset tuning                    | Final model(v7) : WER=0.20, CER=0.07                     |
+| model_tuning_6    | Wooeum-jeongwoo            | Wav2vec2          | hyperparameter tuning             | Performance improvement experiments                      |
+| model_tuning_7    | Wooeum-jeongwoo            | Wav2vec2          | hyperparameter tuning             | Performance improvement experiments                      |
 
 Version v7 was selected as the fine-tuned model best suited for this role, and the final demo used the v7 model.
 
