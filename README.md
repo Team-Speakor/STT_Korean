@@ -23,7 +23,7 @@ While testing the results, we adjusted the dataset size, learning rate, and batc
 | model_tuning_2    | Lee Yujun                  | Wav2vec2          | Dataset and hyperparameter tuning | Set direction for dataset size and hyperparameter tuning |
 | model_tuning_3    | Lee Yujun                  | Wav2vec2          | Dataset and hyperparameter tuning | Set direction for dataset size and hyperparameter tuning |
 | model_tuning_4    | Lee Yujun                  | Wav2vec2          | Dataset and hyperparameter tuning | Set direction for dataset size and hyperparameter tuning |
-| ✅ model_tuning_5 | Lee Yujun                  | Wav2vec2          | Dataset tuning                    | Final model(v7) : WER=0.20, CER=0.07                     |
+| model_tuning_5 ✅ | Lee Yujun                  | Wav2vec2          | Dataset tuning                    | Final model(v7) : WER=0.20, CER=0.07                     |
 | model_tuning_6    | Wooeum-jeongwoo            | Wav2vec2          | hyperparameter tuning             | Performance improvement experiments                      |
 | model_tuning_7    | Wooeum-jeongwoo            | Wav2vec2          | hyperparameter tuning             | Performance improvement experiments                      |
 
