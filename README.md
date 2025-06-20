@@ -10,9 +10,42 @@ Accordingly, the model selected during initial experiments was Wav2Vec2, as it s
 
 Considering the role of a Korean listener, the learning rate was set relatively low at 1e-4 to allow the model to converge slowly and become more familiar with Korean speech.
 
+<img src="./expect.png" alt="model diagram" width="200" />
+
 While testing the results, we adjusted the dataset size, learning rate, and batch size (to avoid OOM) in an attempt to find a set of hyperparameters where the model transcribes Korean speakers accurately and foreign speakers phonetically, based on what it hears.
 
+### Model fine-tunning process
+
+| Experiment     | Contributor                | Model             | Key Contribution                  | Result                                                   |
+| -------------- | -------------------------- | ----------------- | --------------------------------- | -------------------------------------------------------- |
+| model_selec    | Wooeum-jeongwoo, Lee-Yujun | Whisper, Wav2vec2 | model performance compare         | Model Selection: Wav2Vec2                                |
+| model_tuning   | Lee Yujun                  | Wav2vec2          | Initial fine-tuning               | Set direction for dataset size and hyperparameter tuning |
+| model_tuning_2 | Lee Yujun                  | Wav2vec2          | Dataset and hyperparameter tuning | Set direction for dataset size and hyperparameter tuning |
+| model_tuning_3 | Lee Yujun                  | Wav2vec2          | Dataset and hyperparameter tuning | Set direction for dataset size and hyperparameter tuning |
+| model_tuning_4 | Lee Yujun                  | Wav2vec2          | Dataset and hyperparameter tuning | Set direction for dataset size and hyperparameter tuning |
+| model_tuning_5 | Lee Yujun                  | Wav2vec2          | Dataset tuning                    | Final model(v7) : WER=0.20, CER=0.07                     |
+| model_tuning_6 | Wooeum-jeongwoo            | Wav2vec2          | hyperparameter tuning             | Performance improvement experiments                      |
+| model_tuning_7 | Wooeum-jeongwoo            | Wav2vec2          | hyperparameter tuning             | Performance improvement experiments                      |
+
 Version v7 was selected as the fine-tuned model best suited for this role, and the final demo used the v7 model.
+
+### model performance
+
+| STT_korean Version | WER (Test Env) | CER (Test Env) | WER (Real Env) |
+| ------------------ | -------------- | -------------- | -------------- |
+| v7                 | 0.20           | 0.07           | ~0.30          |
+
+### Fitness for purpose
+
+Case1 : korean voice
+Label: 저 그런 농담은 친구 사이에도 해서는 안 되는 거야.
+v7's Inference: 저 그런 농담은 친구 사이에도 해서는 안되는 거야.
+
+Case2 : Foreign voice(Inaccurate pronunciation)
+Label : 제 취미는 농구예요 일주일에 세 번 정도 농구를 해요
+v7's Inference : 저 제 주미는 농구에 일주일에 세방장도 농구를 해요.
+
+The model is capable of transcribing speech in a way that aligns with how native Korean speakers perceive it—producing accurate transcriptions for correct pronunciations, and reflecting errors when the pronunciation is inaccurate.
 
 ### Gitbub directory
 
