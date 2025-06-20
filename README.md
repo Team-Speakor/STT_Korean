@@ -37,12 +37,12 @@ Version v7 was selected as the fine-tuned model best suited for this role, and t
 
 ### Fitness for purpose
 
-Case1 : korean voice
-Label: 저 그런 농담은 친구 사이에도 해서는 안 되는 거야.
+Case1 : korean voice  
+Label: 저 그런 농담은 친구 사이에도 해서는 안 되는 거야.  
 v7's Inference: 저 그런 농담은 친구 사이에도 해서는 안되는 거야.
 
-Case2 : Foreign voice(Inaccurate pronunciation)
-Label : 제 취미는 농구예요 일주일에 세 번 정도 농구를 해요
+Case2 : Foreign voice(Inaccurate pronunciation)  
+Label : 제 취미는 농구예요 일주일에 세 번 정도 농구를 해요  
 v7's Inference : 저 제 주미는 농구에 일주일에 세방장도 농구를 해요.
 
 The model is capable of transcribing speech in a way that aligns with how native Korean speakers perceive it—producing accurate transcriptions for correct pronunciations, and reflecting errors when the pronunciation is inaccurate.
