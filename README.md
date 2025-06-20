@@ -10,7 +10,7 @@ Accordingly, the model selected during initial experiments was Wav2Vec2, as it s
 
 Considering the role of a Korean listener, the learning rate was set relatively low at 1e-4 to allow the model to converge slowly and become more familiar with Korean speech.
 
-<img src="./expect.png" alt="model diagram" width="200" />
+<img src="./expect.png" alt="model diagram" width="800" />
 
 While testing the results, we adjusted the dataset size, learning rate, and batch size (to avoid OOM) in an attempt to find a set of hyperparameters where the model transcribes Korean speakers accurately and foreign speakers phonetically, based on what it hears.
 
