@@ -4,7 +4,7 @@ STT model for transcribing speech based on how native Korean listeners perceive 
 
 The goal was to develop a model capable of acting as a “Korean listener,” meaning it can transcribe speech as it sounds from the perspective of a native Korean speaker.
 
-![model diagram](./model_diagram.png)
+<img src="./model_diagram.png" alt="model diagram" width="400" />
 
 Accordingly, the model selected during initial experiments was Wav2Vec2, as it showed potential in transcribing what is heard as-is.
 
